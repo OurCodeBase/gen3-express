@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Sans;
+  src: url(fonts/sans.woff);
+}
+
+h1 {
+  font-family: Sans;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "gen3-express",
+  "version": "1.0.0",
+  "description": "A gen3 tool to generate get started express app",
+  "main": "index.js",
+  "bin": {
+    "gen3-express": "./bin/gen3-express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OurCodeBase/gen3-express.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "express",
+    "generator",
+    "create-express-app"
+  ],
+  "author": "harsh vairagi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OurCodeBase/gen3-express/issues"
+  },
+  "homepage": "https://github.com/OurCodeBase/gen3-express#readme",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0"
+  }
+}
