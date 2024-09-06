@@ -14,8 +14,8 @@ function availableNetworks() {
 }
 
 function showAvailableNetworks(PORT) {
-  for (const _ of availableNetworks()) {
-    console.log(`http://${_}:${PORT}/`)
+  for (const avnetwork of availableNetworks()) {
+    console.log(`http://${avnetwork}:${PORT}/`)
   }
 }
 
