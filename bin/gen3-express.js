@@ -13,7 +13,7 @@ const createApp = async (appName) => {
     await fse.copy(templatePath, destPath)
     console.log(`[+] Express app has been created at ${destPath}...`)
   } catch (error) {
-    console.log(`[-] ${error.message}`)
+    console.error(`[-] ${error.message}`)
   }
 }
 
