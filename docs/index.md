@@ -1,6 +1,27 @@
+---
+layout: home 
+hero:
+    name: Gen3 Express
+    text: A gen3 tool to generate get started express app.
+    tagline: A free, unofficial, open-source and stable tool to generate minimal express app.
 
-# Gen3 Express
-A gen3 tool to generate get started express app.
+features: 
+    - icon: 💫
+      title: Minimal and Useful
+      details: Provides you hot reloading like more features in a very minimal express app.
+    - icon: 🚀 
+      title: JS Hot Reloadings
+      details: Provides hot reloadings when you change codes of your JS files.
+    - icon: 📜 
+      title: EJS and Static Hot Reloadings
+      details: Provides you hot reloadings when you change ejs, html, css, browser javascript files or any assets.
+    - icon: ⚔
+      title: Cross Platform
+      details: You can use this tool on any platform like Linux, MacOS, Windows (WSL) and also on Android (Termux).
+    - icon: 🥙
+      title: NPX (no need to install extra stuff)
+      details: You don't neet to install a separate tool to generate express apps. You can just simply use npx to fetch files and dependencies temporarily.
+---
 
 ## Acknowledgements
 You need to know atleast basics about these things.
@@ -8,13 +29,6 @@ You need to know atleast basics about these things.
  - [ExpressJS](https://expressjs.com/en/5x/api.html)
  - [Embedded JS](https://ejs.co/)
  
-## Features
-
-- Minimal and Useful 💫
-- JS Hot Reloadings 🚀
-- EJS and Static Hot Reloadings 📜
-- Cross Platform ⚔
-- NPX (no need to install extra stuff) 🥙
 ## Installation
 You can install and generate an express app using this tool in two approaches. Here I'm generating an app with name `my-app`, you can name to it anything you like.
 
