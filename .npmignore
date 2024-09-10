@@ -1,4 +1,5 @@
 /README.md
 /.github
 /docs/.vitepress
+/package-lock.json
 /docs/.vitepress/dist
