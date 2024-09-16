@@ -1,5 +1,8 @@
-# Gen3 Express
-A gen3 tool to generate get started express app.
+## Changelogs 1.0.1
+
+> [!TIP]
+> nets module has been shifted from `/nets.js` to the utils folder `/utils/nets.js`.
+> docs have also been updated.
 
 ## Acknowledgements
 You need to know atleast basics about these things.
@@ -7,13 +10,6 @@ You need to know atleast basics about these things.
  - [ExpressJS](https://expressjs.com/en/5x/api.html)
  - [Embedded JS](https://ejs.co/)
  
-## Features
-
-- Minimal and Useful 💫
-- JS Hot Reloadings 🚀
-- EJS and Static Hot Reloadings 📜
-- Cross Platform ⚔
-- NPX (no need to install extra stuff) 🥙
 ## Installation
 You can install and generate an express app using this tool in two approaches. Here I'm generating an app with name `my-app`, you can name to it anything you like.
 
@@ -51,7 +47,7 @@ npm run sync
 ```
 If you want to run all these servers together then you should to use this below command, this command will provide you hot reloadings in every place.
 ```bash
-npm run server & npm run server
+npm run server & npm run sync
 ```
 
 ## File Cases
@@ -60,13 +56,14 @@ To know about the product or project structure read about files included in this
 ```bash
 .
 ├── app.js # this core file handles express functions and server.
-├── nets.js # this file provides functions to display available ip addresses on your network.
 ├── package.json # package file handles dependencies, and details about the product.
 ├── public # this folder contains public data like fonts, css and multimedia.
 │   ├── fonts
 │   │   └── sans.woff
 │   └── style.css
 ├── sync.js # this file is needed to configure hot reloadings in ejs and static files.
+├── utils
+│   └── nets.js # this file provides functions to display available ip addresses on your network.
 └── views # this folder contains ejs or html files to render contents.
     └── home.ejs # this file is the landing page of the product.
 ```
