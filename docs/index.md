@@ -23,6 +23,12 @@ features:
       details: You don't neet to install a separate tool to generate express apps. You can just simply use npx to fetch files and dependencies temporarily.
 ---
 
+## Changelogs <Badge type="tip" text="1.0.1" />
+
+> [!CAUTION]
+> nets module has been shifted from `/nets.js` to the utils folder `/utils/nets.js`.
+> docs have also been updated.
+
 ## Acknowledgements
 You need to know atleast basics about these things.
  - [NodeJS](https://nodejs.org/docs/latest/api/)
@@ -66,7 +72,7 @@ npm run sync
 ```
 If you want to run all these servers together then you should to use this below command, this command will provide you hot reloadings in every place.
 ```bash
-npm run server & npm run server
+npm run server & npm run sync
 ```
 
 ## File Cases
@@ -75,13 +81,14 @@ To know about the product or project structure read about files included in this
 ```bash
 .
 ├── app.js # this core file handles express functions and server.
-├── nets.js # this file provides functions to display available ip addresses on your network.
 ├── package.json # package file handles dependencies, and details about the product.
 ├── public # this folder contains public data like fonts, css and multimedia.
 │   ├── fonts
 │   │   └── sans.woff
 │   └── style.css
 ├── sync.js # this file is needed to configure hot reloadings in ejs and static files.
+├── utils
+│   └── nets.js # this file provides functions to display available ip addresses on your network.
 └── views # this folder contains ejs or html files to render contents.
     └── home.ejs # this file is the landing page of the product.
 ```

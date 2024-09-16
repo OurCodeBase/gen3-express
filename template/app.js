@@ -1,5 +1,4 @@
 const path = require('path')
-const nets = require('./nets')
 const express = require('express')
 
 const app = express()
@@ -19,6 +18,7 @@ app.use('/colors', express.static(
 app.get('/', (req, res) => res.render('home'))
 
 app.listen(PORT, () => {
+  const nets = require('./utils/nets')
   console.log('Server has been started on...');
   nets.showAvailableNetworks(PORT)
 })
