@@ -24,7 +24,7 @@ npx https://www.github.com/OurCodeBase/gen3-express my-app
 ### 2. node package manager
 Generation of an express app is not recommended through npm.
 ```bash
-npm install -gen3 https://www.github.com/OurCodeBase/gen3-express.git
+npm install -g https://www.github.com/OurCodeBase/gen3-express.git
 ```
 ```bash
 gen3-express my-app
