@@ -11,7 +11,7 @@ hero:
     actions:
     - theme: brand
       text: Get Started
-      link: /readme
+      link: /documentation
     - theme: alt
       text: View on GitHub
       link: https://github.com/OurCodeBase/gen3-express

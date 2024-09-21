@@ -1,11 +1,6 @@
 # Gen3 Express
 A gen3 tool to generate express app boilerplate.
 
-## Changelogs 1.1.0
-tui has been implemented to gen3-express.
-- used signale to implement tui.
-- changes many things in gen3-express file.
-
 ## Acknowledgements
 You need to know atleast basics about these things.
  - [NodeJS](https://nodejs.org/docs/latest/api/)
@@ -18,13 +13,13 @@ You can install and generate an express app using this tool in two approaches. H
 ### 1. node package extecutor
 This method is highly recommended to generate an express app.
 ```bash
-npx https://www.github.com/OurCodeBase/gen3-express my-app
+npx gen3-express my-app
 ```
 
 ### 2. node package manager
 Generation of an express app is not recommended through npm.
 ```bash
-npm install -g https://www.github.com/OurCodeBase/gen3-express.git
+npm install -g gen3-express
 ```
 ```bash
 gen3-express my-app
@@ -75,7 +70,7 @@ To know about the product or project structure read about files included in this
 - Custom name in `package.json` file ✅
 - Excellent terminal user interface ✅
 - Prompt `package.json` file's details from user. ⏩ 
-- Post this project to npmjs website. ⏩
+- Post this project to npmjs website. ✅
 - Custom local template feature ⏩
 
 ## Authors
