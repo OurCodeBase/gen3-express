@@ -1,11 +1,6 @@
 # Gen3 Express
 A gen3 tool to generate express app boilerplate.
 
-## Changelogs 1.1.0
-tui has been implemented to gen3-express.
-- used signale to implement tui.
-- changes many things in gen3-express file.
-
 ## Acknowledgements
 You need to know atleast basics about these things.
  - [NodeJS](https://nodejs.org/docs/latest/api/)
