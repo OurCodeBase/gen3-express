@@ -1,6 +1,6 @@
 {
   "name": "gen3-express",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A gen3 tool to generate express app boilerplate.",
   "bin": {
     "gen3-express": "./bin/gen3-express.js"
