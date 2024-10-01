@@ -1,6 +1,15 @@
 # Gen3 Express
 A gen3 tool to generate express app boilerplate.
 
+> [!IMPORTANT]
+> ### 1.1.2 is released
+> boilerplate has been optimised, enhanced and documented.
+> - `style.css` file is shifted to `public/style.css`
+> - `nets` file is shifted to `netface`
+> - github `readme` file is shifted to `docs` folder.
+> - `.gitignore` has been added.
+
+
 ## Acknowledgements
 You need to know atleast basics about these things.
  - [NodeJS](https://nodejs.org/docs/latest/api/)
@@ -52,17 +61,18 @@ To know about the product or project structure read about files included in this
 
 ```bash
 .
-├── app.js # this core file handles express functions and server.
-├── package.json # package file handles dependencies, and details about the product.
-├── public # this folder contains public data like fonts, css and multimedia.
-│   ├── fonts
-│   │   └── sans.woff
-│   └── style.css
-├── sync.js # this file is needed to configure hot reloadings in ejs and static files.
+├── app.js
+├── package.json
+├── public
+│   ├── css
+│   │   └── style.css
+│   └── fonts
+│       └── sans.woff
+├── sync.js # configuration for hot reloadings in ejs and static files.
 ├── utils
-│   └── nets.js # this file provides functions to display available ip addresses on your network.
-└── views # this folder contains ejs or html files to render contents.
-    └── home.ejs # this file is the landing page of the product.
+│   └── netface.js # contains functions to show available ipv4 addresses.
+└── views
+    └── home.ejs
 ```
 
 ## Roadmap

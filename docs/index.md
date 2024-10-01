@@ -11,7 +11,7 @@ hero:
     actions:
     - theme: brand
       text: Get Started
-      link: /documentation
+      link: /readme
     - theme: alt
       text: View on GitHub
       link: https://github.com/OurCodeBase/gen3-express
@@ -29,7 +29,4 @@ features:
     - icon: ⚔
       title: Cross Platform
       details: You can use this tool on any platform like Linux, MacOS, Windows (WSL) and also on Android (Termux).
-    - icon: 🥙
-      title: NPX Usable
-      details: You don't neet to install a separate tool to generate express apps. You can just simply use npx to fetch files and dependencies temporarily.
 ---

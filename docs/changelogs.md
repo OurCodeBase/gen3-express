@@ -1,6 +1,13 @@
 # Changelogs
 You can check most latest changlogs at [commits](https://github.com/OurCodeBase/gen3-express/commits/main/) or [versions](https://github.com/OurCodeBase/gen3-express/releases) sections in github.
 
+## Changelogs 1.1.2
+boilerplate has been optimised, enhanced and documented.
+- `style.css` file is shifted to `public/style.css`
+- `nets` file is shifted to `netface`
+- github `readme` file is shifted to `docs` folder.
+- `.gitignore` has been added.
+
 ## Changelogs 1.1.1
 generator published at npmjs.
 - docs updated

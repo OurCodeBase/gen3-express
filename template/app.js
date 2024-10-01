@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 
 const app = express()
-const PORT = 3000
+const port = 3000
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
@@ -17,8 +17,14 @@ app.use('/colors', express.static(
 
 app.get('/', (req, res) => res.render('home'))
 
-app.listen(PORT, () => {
-  const nets = require('./utils/nets')
-  console.log('Server has been started on...');
-  nets.showAvailableNetworks(PORT)
+app.listen(port, () => {
+  /**
+   * The above code is exclusivly for dev purpose.
+   * You can replace this function.
+   */
+  const netface = require('./utils/netface')
+  const linkfaces = netface.ipv4s()
+  linkfaces.forEach((face) => {
+    console.info(`http://${face}:${port}`)
+  })
 })
