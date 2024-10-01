@@ -4,15 +4,17 @@
   "main": "app.js",
   "scripts": {
     "server": "nodemon app.js",
-    "sync": "browser-sync start --config sync.js"
+    "sync": "browser-sync start --config sync.js",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run sync\""
   },
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.20.0",
+    "express": "^4.21.0",
     "material-dynamic-colors": "^1.1.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4",
-    "browser-sync": "^3.0.2"
+    "nodemon": "^3.1.7",
+    "concurrently": "^9.0.1",
+    "browser-sync": "^3.0.3"
   }
 }
