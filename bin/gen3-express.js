@@ -7,7 +7,7 @@ const signale = require('signale')
 const { program } = require('commander')
 
 // path of template.
-const template = path.resolve(__dirname, '../template')
+let template = path.resolve(__dirname, '../template')
 
 // change package name of a node package.
 // @param {string} name - new name of node package.
@@ -39,8 +39,13 @@ async function create_app(app_name) {
 program
   .version('1.0.0')
   .argument('<app-name>', 'name to create new app.')
-  .action(async (app_name) => {
+  .option('-t, --tailwindcss', 'To add tailwindcss files.')
+  .action(async (app_name, options) => {
     signale.time()
+    if (options.tailwindcss) {
+      signale.info('You have selected tailwind boilerplate.')
+      template = path.resolve(__dirname, '../tailwind')
+    }
     // check if folder already exist.
     if (!fse.existsSync(app_name)) {
       signale.await(`${app_name} app is on the way.`)
