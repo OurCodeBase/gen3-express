@@ -1,6 +1,12 @@
 # Changelogs
 You can check most latest changlogs at [commits](https://github.com/OurCodeBase/gen3-express/commits/main/) or [versions](https://github.com/OurCodeBase/gen3-express/releases) sections in github.
 
+## 1.1.3 is released
+tailwind css support is added.
+- a new file `tailwind.config.js` is created for tailwind users.
+- multiple server runs shifted to single `dev` keyword command.
+- all dependencies has been updated.
+
 ## Changelogs 1.1.2
 boilerplate has been optimised, enhanced and documented.
 - `style.css` file is shifted to `public/style.css`

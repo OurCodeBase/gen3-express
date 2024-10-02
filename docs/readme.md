@@ -1,14 +1,12 @@
 # Gen3 Express
-A gen3 tool to generate express app boilerplate.
+A gen3 tool to generate express app.
 
 > [!IMPORTANT]
-> ### 1.1.2 is released
-> boilerplate has been optimised, enhanced and documented.
-> - `style.css` file is shifted to `public/style.css`
-> - `nets` file is shifted to `netface`
-> - github `readme` file is shifted to `docs` folder.
-> - `.gitignore` has been added.
-
+> ### 1.1.3 is released
+> tailwind css support is added.
+> - a new file `tailwind.config.js` is created for tailwind users.
+> - multiple server runs shifted to single `dev` keyword command.
+> - all dependencies has been updated.
 
 ## Acknowledgements
 You need to know atleast basics about these things.
@@ -34,32 +32,48 @@ npm install -g gen3-express
 gen3-express my-app
 ```
 
+## Tailwind CSS
+To get tailwind css boilerplate, you can add `-t` or `--tailwindcss` switches or flags while generating a site.
+```bash
+npx gen3-express my-app --tailwindcss
+```
+
+### Usage
+To add tailwindcss to your `EJS` page, use `css/tailwind.css` into a `link` tag.
+```html
+<link href="css/tailwind.css" rel="stylesheet">
+```
+Because of `tailwind` updates css file according your needs, We need to run a `tailwind` sever with command below.
+```bash
+npm run tailwind
+```
+- If you choosed tailwind css boilerplate then this server will run with `dev` keyword server.
+
 ## Documentation
-To install all dev dependencies goto the folder and hit `npm install` command.
+To install all dependencies goto the folder and execute `npm install` command.
 ```bash
 cd my-app
 npm install
 ```
-To start a dev server to preview page use `server` word.
-- Keep in mind that
-- The below command does not include EJS live reloading.
+To start a dev server to preview page use `server` keyword.
+- Keep in mind that the below command does not provide live reloading in `EJS` and `public` files.
 
 ```bash
 npm run server
 ```
-To start a dev server to live preview EJS page use `sync` word.
+To get live reloading in `EJS` and `public` folder, create another server with `sync` keyword.
 ```bash
 npm run sync
 ```
 If you want to run all these servers together then you should to use this below command, this command will provide you hot reloadings in every place.
 ```bash
-npm run server & npm run sync
+npm run dev
 ```
 
-## File Cases
-To know about the product or project structure read about files included in this code block.
+## File Tree
+To know about the project structure read about files included in this code block.
 
-```bash
+```yml
 .
 ├── app.js
 ├── package.json
@@ -79,8 +93,10 @@ To know about the product or project structure read about files included in this
 
 - Custom name in `package.json` file ✅
 - Excellent terminal user interface ✅
-- Prompt `package.json` file's details from user. ⏩ 
 - Post this project to npmjs website. ✅
+- Add Tailwind CSS support. ✅
+- Use a lightweight server for EJS live reloading. ⏩
+- Prompt `package.json` file's details from user. ⏩ 
 - Custom local template feature ⏩
 
 ## Authors
