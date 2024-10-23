@@ -95,7 +95,7 @@ To know about the project structure read about files included in this code block
 - Excellent terminal user interface ✅
 - Post this project to npmjs website. ✅
 - Add Tailwind CSS support. ✅
-- Use a lightweight server for EJS live reloading. ⏩
+- Use a lightweight server for EJS live reloading. ✅
 - Prompt `package.json` file's details from user. ⏩ 
 - Custom local template feature ⏩
 
