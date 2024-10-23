@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "server": "nodemon app.js",
-    "sync": "browser-sync start --config sync.js",
+    "server": "nodemon",
     "tailwind": "npx tailwindcss -i public/css/style.css -o public/css/tailwind.css --watch",
-    "dev": "run-p -c -r server sync tailwind"
+    "dev": "run-p -c -r server tailwind"
   },
   "dependencies": {
     "ejs": "^3.1.10",

@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "server": "nodemon app.js",
-    "sync": "browser-sync start --config sync.js",
-    "dev": "run-p -c -r server sync"
+    "server": "nodemon",
+    "dev": "run-p -c -r server"
   },
   "dependencies": {
     "ejs": "^3.1.10",
