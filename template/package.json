@@ -5,7 +5,7 @@
   "scripts": {
     "server": "nodemon app.js",
     "sync": "browser-sync start --config sync.js",
-    "dev": "concurrently --kill-others \"npm run server\" \"npm run sync\""
+    "dev": "run-p -c -r server sync"
   },
   "dependencies": {
     "ejs": "^3.1.10",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.7",
-    "concurrently": "^9.0.1",
+    "npm-run-all2": "^7.0.0",
     "browser-sync": "^3.0.3"
   }
 }
