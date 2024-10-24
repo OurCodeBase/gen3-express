@@ -2,13 +2,13 @@
 A gen3 tool to generate express app.
 
 ## Acknowledgements
-You need to know atleast basics about these things.
+You need to know atleast basics of these technologies.
  - [NodeJS](https://nodejs.org/docs/latest/api/)
  - [ExpressJS](https://expressjs.com/en/5x/api.html)
  - [Embedded JS](https://ejs.co/)
  
 ## Installation
-You can install and generate an express app using this tool in two approaches. Here I'm generating an app with name `my-app`, you can name to it anything you like.
+You can generate an express app using this tool in two approaches. Here I'm generating an app with name `my-app`, you can name to it anything you like.
 
 ### 1. node package extecutor
 This method is highly recommended to generate an express app.
@@ -26,21 +26,21 @@ gen3-express my-app
 ```
 
 ## Tailwind CSS
-To get tailwind css boilerplate, you can add `-t` or `--tailwindcss` switches or flags while generating a site.
+To get tailwind css boilerplate, you can add `-t` or `--tailwindcss` switch or flag while generating a site.
 ```bash
 npx gen3-express my-app --tailwindcss
 ```
 
 ### Usage
-To add tailwindcss to your `EJS` page, use `css/tailwind.css` into a `link` tag.
+To add tailwindcss to your frontend page, use `css/tailwind.css` into a `link` tag.
 ```html
 <link href="css/tailwind.css" rel="stylesheet">
 ```
-Because of `tailwind` updates css file according your needs, We need to run a `tailwind` sever with command below.
+We have to run a `tailwind` sever with the below command, because `tailwindcss` regularly update css file according to your needs.
 ```bash
 npm run tailwind
 ```
-- If you choosed tailwind css boilerplate then this server will run with `dev` keyword server.
+- You can run frontend, backend and tailwind servers parallelly using `dev` keyword.
 
 ## Documentation
 To install all dependencies goto the folder and execute `npm install` command.
@@ -49,22 +49,19 @@ cd my-app
 npm install
 ```
 To start a dev server to preview page use `server` keyword.
-- Keep in mind that the below command does not provide live reloading in `EJS` and `public` files.
+- The below command does also provide live reloading in frontend and `public` files.
 
 ```bash
 npm run server
 ```
-To get live reloading in `EJS` and `public` folder, create another server with `sync` keyword.
-```bash
-npm run sync
-```
-If you want to run all these servers together then you should to use this below command, this command will provide you hot reloadings in every place.
+If you want to run all servers together (especially tailwindcss) then you should to use the below command, this command provides multiple servers parallelly.
 ```bash
 npm run dev
 ```
 
 ## File Tree
 To know about the project structure read about files included in this code block.
+- In case of tailwindcss, the boilerplate contains additional files like `tailwind.config.js` for tailwindcss configs.
 
 ```yml
 .
@@ -75,7 +72,7 @@ To know about the project structure read about files included in this code block
 │   │   └── style.css
 │   └── fonts
 │       └── sans.woff
-├── sync.js # configuration for hot reloadings in ejs and static files.
+├── nodemon.json # configs for hot reloadings in frontend and backend.
 ├── utils
 │   └── netface.js # contains functions to show available ipv4 addresses.
 └── views

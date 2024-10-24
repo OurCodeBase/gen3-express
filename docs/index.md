@@ -30,6 +30,6 @@ features:
       title: Cross Platform
       details: You can use this tool on any platform like Linux, MacOS, Windows (WSL) and also on Android (Termux).
     - icon: 🍃
-      title: Tailwind CSS (new)
+      title: Tailwind CSS
       details: You can include tailwind css to your site with one switch while generate.
 ---
